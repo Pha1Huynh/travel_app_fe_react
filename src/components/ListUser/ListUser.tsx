@@ -5,7 +5,7 @@ import { getAllUser } from '../../api/user.api';
 
 import { IUser } from '../../interfaces/entities/user.entities';
 import { useAppDispatch, useAppSelector } from '../../redux/config/hooks';
-import { getAllUserAction, deleteUserAction, createUserAction } from '../../redux/actions/userAction';
+import { getAllUserAction, deleteUserAction, createUserAction, updateUserAction } from '../../redux/actions/userAction';
 import { toast } from 'react-toastify';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import Loading from '../Loading/Loading';
@@ -69,8 +69,8 @@ const ListUser = () => {
   };
 
   const toggle = () => setOpenModal(!openModal);
-  const { listUser, isLoading } = useAppSelector((state) => state.user);
-  const { isLogin, accessToken } = useAppSelector((state) => state.auth);
+  let { listUser, isLoading } = useAppSelector((state) => state.user);
+  let { isLogin, accessToken } = useAppSelector((state) => state.auth);
 
   const dispatch = useAppDispatch();
   useEffect(() => {
@@ -99,7 +99,10 @@ const ListUser = () => {
   const handleAddDataUser = async () => {
     await dispatch(createUserAction({ userData: dataUserState, token: accessToken }));
   };
-
+  const handleSaveDataUser = async () => {
+    let userUpdate = await dispatch(updateUserAction({ userData: dataUserState, token: accessToken }));
+    setOpenModal(false);
+  };
   return (
     <>
       <Loading isShow={isLoading}></Loading>
@@ -266,7 +269,7 @@ const ListUser = () => {
                 Add
               </Button>
             ) : (
-              <Button color="primary" onClick={toggle}>
+              <Button color="primary" onClick={() => handleSaveDataUser()}>
                 Save
               </Button>
             )}

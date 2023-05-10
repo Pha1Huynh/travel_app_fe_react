@@ -6,11 +6,12 @@ import { loginAction } from '../../../redux/actions/authAction';
 function LoginPage() {
   const dispatch = useAppDispatch();
   const navigate = useNavigate();
-  const { accessToken, isLoading, isLogin } = useAppSelector((state) => state.auth);
   const [loginState, setLoginState] = useState<any>({
     userNameOrEmailAddress: '',
     password: '',
   });
+  const { isLogin } = useAppSelector((state) => state.auth);
+
   useEffect(() => {
     if (isLogin) {
       navigate('/');
@@ -22,9 +23,10 @@ function LoginPage() {
     setLoginState({ ...copyState });
   };
   const handleLogin = async () => {
-    await dispatch(loginAction(loginState));
-    if (isLogin) {
-      navigate('/home');
+    let token = await dispatch(loginAction(loginState));
+
+    if (token) {
+      navigate('/');
     }
   };
 

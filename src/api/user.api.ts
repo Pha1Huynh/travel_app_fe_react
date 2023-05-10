@@ -12,3 +12,6 @@ export const deleteAUser = (id: number, token: string) => {
 export const apiCreateUser = (data: IUser, token: string): Promise<CreateUserResponse> => {
   return axios.post('/user/create', data, { headers: { Authorization: `Bearer ${token}` } });
 };
+export const apiUpdateUser = (data: IUser, token: string): Promise<CreateUserResponse> => {
+  return axios.patch('/user/update', data, { headers: { Authorization: `Bearer ${token}` } });
+};

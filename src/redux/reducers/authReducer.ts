@@ -1,5 +1,5 @@
 import { createReducer } from '@reduxjs/toolkit';
-import { loginAction } from '../actions/authAction';
+import { loginAction, logoutAction } from '../actions/authAction';
 import { toast } from 'react-toastify';
 interface AuthState {
   accessToken: string;
@@ -24,5 +24,15 @@ export const authReducer = createReducer(initialState, (builder) => {
     state.isLoading = false;
     state.isLogin = false;
     toast.error('Login failed');
+  });
+
+  builder.addCase(logoutAction.pending, (state, action) => {
+    state.isLoading = true;
+  });
+  builder.addCase(logoutAction.fulfilled, (state, action) => {
+    state.accessToken = '';
+    state.isLoading = false;
+    state.isLogin = false;
+    toast.success('Logout Success');
   });
 });

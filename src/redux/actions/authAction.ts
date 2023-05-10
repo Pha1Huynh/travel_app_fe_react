@@ -11,3 +11,10 @@ export const loginAction = createAsyncThunk('auth/login', async (data: ILogin, {
     return rejectWithValue(e);
   }
 });
+export const logoutAction = createAsyncThunk('auth/logout', async (data: never, { rejectWithValue }) => {
+  try {
+    return true;
+  } catch (e) {
+    return rejectWithValue(e);
+  }
+});
