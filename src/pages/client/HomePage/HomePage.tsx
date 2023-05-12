@@ -7,7 +7,7 @@ const HomePage = () => {
     <>
       <div className="app-container">
         <MenuHeader />
-        <h1>CRUD Application</h1>
+
         <div className="button_primary">Hello</div>
       </div>
     </>
