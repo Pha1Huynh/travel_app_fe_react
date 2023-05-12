@@ -6,7 +6,6 @@ const HomePage = () => {
   return (
     <>
       <div className="app-container">
-        This is HomePage
         <InfoHeader />
       </div>
     </>
