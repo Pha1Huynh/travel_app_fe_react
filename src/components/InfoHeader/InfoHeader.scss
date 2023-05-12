@@ -1,0 +1,85 @@
+.infoHeader-container {
+    height          : 3.6rem;
+    background-color: var(--primary-color);
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+
+    .max-wide-1200 {
+        display        : flex;
+        justify-content: space-between;
+        align-items    : center;
+
+        .left {
+            display        : flex;
+            justify-content: center;
+            align-items    : center;
+
+            .phone-info {
+                text-transform: uppercase;
+                font-size     : 1rem;
+                font-weight   : 600;
+                height        : 100%;
+                margin        : auto 0;
+                color         : var(--white);
+                margin-right  : 4.5rem;
+            }
+
+            .social-info {
+                display        : flex;
+                justify-content: space-between;
+                align-items    : center;
+
+                .social-icon {
+                    display        : flex;
+                    justify-content: space-between;
+                    align-items    : center;
+                    color          : #fff;
+                    font-weight    : 600;
+                    font-size      : 1.15rem;
+                    margin         : 0 1.2rem;
+
+                    &:hover {
+                        color: var(--yellow-color)
+                    }
+                }
+            }
+        }
+
+        .right {
+            .login-and-register {
+                display        : flex;
+                justify-content: center;
+                align-items    : center;
+                text-transform : uppercase;
+                height         : 100%;
+
+                .stick {
+                    display         : block;
+                    width           : .1rem;
+                    height          : 1rem;
+                    background-color: #fff;
+                    margin          : 0 .4rem;
+                }
+
+                a {
+                    color          : #fff;
+                    text-decoration: none;
+                    font-size      : 1rem;
+                    font-weight    : 600;
+                    transform      : .3s;
+
+                    &:hover {
+                        color: var(--yellow-color);
+
+                    }
+                }
+            }
+        }
+
+
+
+    }
+
+
+}
