@@ -5,7 +5,6 @@ import './InfoHeader.scss';
 import {
   faPinterest,
   faTwitter,
-  faFacebook,
   faDribbble,
   faBehance,
   faLinkedinIn,

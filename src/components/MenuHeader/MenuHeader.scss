@@ -1,0 +1,111 @@
+.menuHeader-container {
+    background-color  : var(--header-menu-color);
+    position          : fixed;
+    top               : 0;
+    transition        : height 2s;
+    -moz-transition   : height 2s;
+    -webkit-transition: height 2s;
+    -o-transition     : height 2s;
+    z-index           : 1;
+    width             : 100%;
+    height            : var(--bottom-header-height);
+    display           : flex;
+    align-items       : flex-end;
+
+
+    &.scroll {
+        height: 12rem;
+    }
+
+    .max-wide-1200 {
+        height         : calc(var(--bottom-header-height) - var(--top-header-height));
+        display        : flex;
+        justify-content: space-between;
+        align-items    : center;
+
+        .logo {
+            display        : flex;
+            justify-content: center;
+            align-items    : center;
+            font-size      : 3rem;
+            color          : #f4f4f8;
+            font-weight    : 800;
+
+            .logo_img {
+                transform   : translateY(-1.6rem);
+                margin-right: .4rem;
+            }
+        }
+
+        .menu-list {
+            display        : flex;
+            justify-content: center;
+            align-items    : center;
+            margin-left    : 9rem;
+            transform      : translateY(-1rem);
+
+
+
+            .menu-element {
+                text-decoration: none;
+                color          : #fff;
+                font-size      : 1.4rem;
+                text-transform : uppercase;
+                margin         : 0 1.2rem;
+
+                &::after {
+                    display   : block;
+                    content   : "";
+                    width     : calc(100% + .2rem);
+                    height    : .2rem;
+                    background: linear-gradient(to right, #fa9e1b, #8d4fff);
+                    margin-top: .6rem;
+                    opacity   : 0;
+                    transition: .3s;
+                }
+
+                &.active::after {
+                    opacity: 1;
+
+                }
+
+                &:hover::after {
+                    opacity: 1;
+                }
+
+
+            }
+        }
+
+        .search {
+            width     : 24rem;
+            text-align: right;
+
+            .search-icon {
+                font-size  : 1.8rem;
+                color      : #fff;
+                font-weight: 800;
+                transition : .3s;
+            }
+
+            .search-form {
+                display        : flex;
+                justify-content: space-between;
+                align-items    : center;
+
+                button {
+                    color           : #fff;
+                    font-size       : 1rem;
+                    padding         : .5rem .6rem;
+                    background-color: var(--primary-color);
+                    border          : none;
+                    border-radius   : .6rem;
+                    margin-left     : .4rem;
+
+                }
+            }
+        }
+    }
+
+
+}
