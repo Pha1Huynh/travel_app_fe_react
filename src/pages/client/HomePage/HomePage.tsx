@@ -1,12 +1,14 @@
 import './HomePage.scss';
 
-import InfoHeader from '../../../components/InfoHeader/InfoHeader';
-
+import AppHeader from '../../../components/AppHeader/AppHeader';
 const HomePage = () => {
   return (
     <>
       <div className="app-container">
-        <InfoHeader />
+        <div className="header">
+          <AppHeader />
+        </div>
+        <div className="main-content"></div>
       </div>
     </>
   );
