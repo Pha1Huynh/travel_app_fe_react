@@ -1,9 +1,15 @@
 .infoHeader-container {
-    height          : 3.6rem;
+    height          : var(--top-header-height);
     background-color: var(--primary-color);
     display         : flex;
     justify-content : center;
     align-items     : center;
+    position        : absolute;
+    top             : 0;
+    left            : 0;
+    right           : 0;
+    z-index         : 2;
+
 
     .max-wide-1200 {
         display        : flex;
