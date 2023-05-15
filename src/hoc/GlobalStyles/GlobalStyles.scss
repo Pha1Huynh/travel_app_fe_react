@@ -1,6 +1,7 @@
 @import 'normalize.css';
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 :root {
     --max-width           : 120rem;
@@ -11,13 +12,16 @@
     --text-color          : #161823;
     --font-opensan        : 'Open Sans', sans-serif;
     --linear-color        : linear-gradient(to right, #fa9e1b 0%, #8d4fff 51%, #fa9e1b 100%);
-    --header-menu-color   : #361354d9;
+    --header-menu-color   : rgba(54, 19, 84, .85);
     --top-header-height   : 3.6rem;
     --bottom-header-height: 15.6rem;
+    --font-beauty         : 'Pacifico'
 }
 
 html {
     font-size: 62.5%;
+
+
 }
 
 * {
@@ -52,23 +56,44 @@ body {
     line-height     : 5.3rem;
     background-image: var(--linear-color);
     margin          : 10px;
-    width           : 19.6rem;
-    height          : 5.3rem;
-    text-align      : center;
-    text-transform  : uppercase;
-    transition      : 0.4s;
-    background-size : 200% auto;
-    color           : white;
-    box-shadow      : 0 0 20px #eee;
-    border-radius   : 50px;
-    display         : block;
-    cursor          : pointer;
-    text-align      : center;
+
+    height         : 5.3rem;
+    text-align     : center;
+    text-transform : uppercase;
+    transition     : 0.4s;
+    background-size: 200% auto;
+    color          : white;
+
+    border-radius  : 50px;
+    display        : block;
+    cursor         : pointer;
+    text-align     : center;
+    text-transform : uppercase;
+    font-size      : 1.3rem;
+    font-weight    : 700;
+    letter-spacing : .05rem;
+    border         : none;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
 
     &:hover {
         background-position: right center;
 
     }
+}
+
+.button-size-m {
+    width: 20.4rem;
+
+}
+
+.button-size-l {
+    width: 22.4rem;
+}
+
+.button-size-sm {
+    width: 19.7rem;
 }
 
 .max-wide-1200 {
