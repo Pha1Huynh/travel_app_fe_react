@@ -10,6 +10,7 @@ import {
   faLinkedinIn,
   faFacebookF,
 } from '@fortawesome/free-brands-svg-icons';
+
 function InfoHeader() {
   return (
     <>

@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { useState, useEffect } from 'react';
 function MenuHeader() {
-  const [searchInput, setSearchInput] = useState(true);
+  const [searchInput, setSearchInput] = useState(false);
   const [isScroll, setIsScroll] = useState(false);
   useEffect(() => {
     function handleScroll() {
