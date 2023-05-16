@@ -46,6 +46,8 @@ body {
     cursor          : pointer;
     color           : var(--white);
     transition      : .4s;
+    border-radius   : 50px;
+    border          : none;
 
     &:hover {
         opacity: .8;
