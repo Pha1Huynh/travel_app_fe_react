@@ -1,6 +1,7 @@
 import { IBanner } from '../../interfaces/components/banner.interface';
 import './Banner.scss';
-import EllipsisIcon from '../EllipsisIcon/EllipsisIcon';
+
+import Button from '../Button/Button';
 function Banner(props: IBanner) {
   const { image, firstText, secondText, isHaveButton } = props;
   return (
@@ -12,11 +13,7 @@ function Banner(props: IBanner) {
         <div className="banner-text">
           <p className="first-text">{firstText}</p>
           <p className="second-text">{secondText}</p>
-          {isHaveButton && (
-            <button className="button_linear button-size-l">
-              Explore Now <EllipsisIcon />
-            </button>
-          )}
+          {isHaveButton && <Button text="Explore Now" type="linear" size="l" />}
         </div>
       </div>
     </>
