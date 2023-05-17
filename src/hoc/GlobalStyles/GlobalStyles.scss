@@ -10,8 +10,12 @@
     --white               : #fff;
     --yellow-color        : #fa9e1b;
     --text-color          : #161823;
+    --pink-color          : #929191;
+    --pink-strong-color   : #a5a5a5;
+    --title-color         : #2d2c2c;
     --font-opensan        : 'Open Sans', sans-serif;
-    --linear-color        : linear-gradient(to right, #fa9e1b 0%, #8d4fff 51%, #fa9e1b 100%);
+    --button-linear-color : linear-gradient(to right, #fa9e1b 0%, #8d4fff 51%, #fa9e1b 100%);
+    --bg-linear-color     : linear-gradient(to right, #fa9e1b, #8d4fff);
     --header-menu-color   : rgba(54, 19, 84, .85);
     --top-header-height   : 3.6rem;
     --bottom-header-height: 15.6rem;
@@ -48,6 +52,13 @@ body {
     transition      : .4s;
     border-radius   : 50px;
     border          : none;
+    text-align      : center;
+    text-transform  : uppercase;
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+    font-size       : 1.4rem;
+    font-weight     : 700;
 
     &:hover {
         opacity: .8;
@@ -56,7 +67,7 @@ body {
 
 .button_linear {
     line-height     : 5.3rem;
-    background-image: var(--linear-color);
+    background-image: var(--button-linear-color);
     margin          : 10px;
 
     height         : 5.3rem;
@@ -73,7 +84,7 @@ body {
     text-transform : uppercase;
     font-size      : 1.3rem;
     font-weight    : 700;
-    letter-spacing : .05rem;
+    letter-spacing : .04rem;
     border         : none;
     display        : flex;
     justify-content: center;
