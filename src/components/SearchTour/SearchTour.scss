@@ -1,0 +1,92 @@
+.search-container {
+    transform: translateY(-33%);
+
+    .search-options {
+        display              : grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        background-color     : #fff;
+        height               : 9.4rem;
+
+        border-top-right-radius: 9.6rem;
+        border-top-left-radius : 9.6rem;
+        overflow               : hidden;
+
+
+
+        .option-element {
+
+            height         : 100%;
+            display        : flex;
+            justify-content: center;
+            align-items    : center;
+
+            transition : .3s;
+            font-size  : 1.4rem;
+            font-weight: 700;
+            line-height: 9.4rem;
+
+
+            img {
+                margin-right: 1rem;
+            }
+
+            &:hover,
+            &.active {
+                background-color: #fa9e1b;
+                color           : #fff;
+
+                img {
+                    filter: brightness(200%) grayscale(100%);
+                }
+            }
+        }
+
+
+    }
+
+    .search-form {
+        background: var(--bg-linear-color);
+        height    : 19.2rem;
+
+        .max-wide-1200 {
+            height         : 100%;
+            display        : flex;
+            justify-content: center;
+            align-items    : center;
+
+            form {
+                width: 100%;
+            }
+
+            .form-group {
+                &:last-child {
+                    display        : flex;
+                    justify-content: center;
+                    align-items    : flex-end;
+
+                    button {
+                        width: 100%;
+                    }
+                }
+
+                label {
+                    color         : #fff;
+                    margin-bottom : 1.4rem;
+                    text-transform: uppercase;
+                    font-size     : 1.4rem;
+                    font-weight   : 700;
+                }
+            }
+
+            .form-element {
+                height   : 4.6rem;
+                font-size: 1.5rem;
+                padding  : 0 1.4rem;
+                color    : var(--pink-color);
+
+            }
+
+
+        }
+    }
+}
