@@ -1,0 +1,65 @@
+.package-container {
+
+    height         : 70vh;
+    margin-top     : 8rem;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    position       : relative;
+
+    .overlay {
+        position           : absolute;
+        top                : 0;
+        right              : 0;
+        left               : 0;
+        bottom             : 0;
+        background-repeat  : no-repeat;
+        background-size    : cover;
+        background-position: center center;
+        opacity            : .27;
+
+
+
+    }
+
+    .max-wide-1200 {
+        position        : absolute;
+        z-index         : 1;
+        height          : 62.5%;
+        background-color: #fff;
+        display         : flex;
+        justify-content : center;
+        align-items     : center;
+
+        .package-content {
+            width          : 80%;
+            height         : 70%;
+            display        : flex;
+            justify-content: flex-start;
+            align-items    : center;
+            flex-direction : column;
+
+            .package-title {
+                font-size    : 3rem;
+                font-weight  : 650;
+                color        : var(--title-color);
+                margin-bottom: .6rem;
+            }
+
+            .package-description {
+                color        : var(--pink-strong-color);
+                font-size    : 1.4rem;
+                font-weight  : 600;
+                text-align   : center;
+                margin-top   : 1rem;
+                flex         : 1;
+                margin-bottom: .6rem;
+                line-height  : 3rem;
+
+            }
+
+
+
+        }
+    }
+}
