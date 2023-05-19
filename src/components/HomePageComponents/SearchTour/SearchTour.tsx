@@ -1,11 +1,11 @@
 import './SearchTour.scss';
-import hotelImg from '../../images/icons/hotel.webp';
-import carImg from '../../images/icons/car.webp';
-import flightImg from '../../images/icons/fly.webp';
-import tripImg from '../../images/icons/trip.webp';
-import cruiseImg from '../../images/icons/cruises.webp';
-import activitiesImg from '../../images/icons/activities.webp';
-import Button from '../Button/Button';
+import hotelImg from '../../../images/icons/hotel.webp';
+import carImg from '../../../images/icons/car.webp';
+import flightImg from '../../../images/icons/fly.webp';
+import tripImg from '../../../images/icons/trip.webp';
+import cruiseImg from '../../../images/icons/cruises.webp';
+import activitiesImg from '../../../images/icons/activities.webp';
+import Button from '../../Button/Button';
 function SearchTour() {
   return (
     <>

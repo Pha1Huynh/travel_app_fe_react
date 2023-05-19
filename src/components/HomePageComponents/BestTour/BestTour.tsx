@@ -1,6 +1,6 @@
 import './BestTour.scss';
 import TourCard from '../TourCard/TourCard';
-import card1 from '../../images/tourCard/card1.webp';
+import card1 from '../../../images/tourCard/card1.webp';
 
 function BestTour() {
   return (

@@ -3,7 +3,7 @@ import MenuHeader from '../MenuHeader/MenuHeader';
 import './AppHeader.scss';
 import Banner from '../Banner/Banner';
 
-import { IBanner } from './../../interfaces/components/banner.interface';
+import { IBanner } from '../../../interfaces/components/banner.interface';
 function AppHeader(props: IBanner) {
   return (
     <>
