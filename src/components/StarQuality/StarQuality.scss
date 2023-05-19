@@ -1,0 +1,25 @@
+.startQuality-container {
+    .start-icon {
+        margin-right: .8rem;
+    }
+
+    .start-icon:first-child {
+        color: var(--first-star-color);
+    }
+
+    .start-icon:nth-child(2) {
+        color: var(--second-star-color);
+    }
+
+    .start-icon:nth-child(3) {
+        color: var(--third-star-color);
+    }
+
+    .start-icon:nth-child(4) {
+        color: var(--fourth-star-color);
+    }
+
+    .start-icon:nth-child(5) {
+        color: var(--star-no-color);
+    }
+}

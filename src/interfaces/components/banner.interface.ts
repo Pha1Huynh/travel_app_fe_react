@@ -1,5 +1,5 @@
 export interface IBanner {
-  image: any;
+  image: string;
   firstText: string;
   secondText: string;
   isHaveButton: boolean;

@@ -19,7 +19,14 @@
     --header-menu-color   : rgba(54, 19, 84, .85);
     --top-header-height   : 3.6rem;
     --bottom-header-height: 15.6rem;
-    --font-beauty         : 'Pacifico'
+    --font-beauty         : 'Pacifico';
+
+    --star-no-color    : #a5a5a5;
+    --first-star-color : #ffeb8d;
+    --second-star-color: #fed46b;
+    --third-star-color : #fbb53d;
+    --fourth-star-color: #fa9e1b;
+
 }
 
 html {
@@ -28,7 +35,8 @@ html {
 
 }
 
-* {
+*,
+p {
     box-sizing: border-box;
     margin    : 0;
     padding   : 0;
@@ -43,7 +51,7 @@ body {
 
 }
 
-.button_primary {
+.button-primary {
     width           : 19.6rem;
     height          : 5.3rem;
     background-color: var(--primary-color);
@@ -65,7 +73,7 @@ body {
     }
 }
 
-.button_linear {
+.button-linear {
     line-height     : 5.3rem;
     background-image: var(--button-linear-color);
     margin          : 10px;

@@ -4,7 +4,7 @@ import EllipsisIcon from '../EllipsisIcon/EllipsisIcon';
 function Button(props: IButton) {
   const { text, type, size } = props;
   let sizeCss = `button-size-${size}`;
-  let typecss = `button_${type}`;
+  let typecss = `button-${type}`;
   return (
     <>
       <button className={`${typecss} ${sizeCss}`}>
