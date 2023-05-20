@@ -5,6 +5,7 @@ import HomeBanner from '../../../images/banner/home.webp';
 import SearchTour from '../../../components/HomePageComponents/SearchTour/SearchTour';
 import BestTour from '../../../components/HomePageComponents/BestTour/BestTour';
 import Package from '../../../components/HomePageComponents/Package/Package';
+import BestOffer from '../../../components/HomePageComponents/BestOffer/BestOffer';
 const HomePage = () => {
   return (
     <>
@@ -13,6 +14,7 @@ const HomePage = () => {
         <SearchTour />
         <BestTour />
         <Package />
+        <BestOffer />
         <div className="main-content"></div>
       </div>
     </>

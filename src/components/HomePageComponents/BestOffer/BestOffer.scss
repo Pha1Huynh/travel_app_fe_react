@@ -1,0 +1,22 @@
+.bestOffer-container {
+    margin-top: 9rem;
+
+    .max-wide-1200 {
+
+        .title {
+            font-size    : 3rem;
+            color        : var(--title-color);
+            font-weight  : 650;
+            text-align   : center;
+            margin-bottom: 9rem;
+        }
+
+        .offer-list {
+            display              : grid;
+            grid-template-columns: 1fr 1fr;
+            row-gap              : 7rem;
+            column-gap           : 2rem;
+
+        }
+    }
+}
