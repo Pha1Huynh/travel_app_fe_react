@@ -1,6 +1,6 @@
-import { ITourCard } from '../../interfaces/components/tourCard.interface';
-import Button from '../Button/Button';
-import StarQuality from '../StarQuality/StarQuality';
+import { ITourCard } from '../../../interfaces/components/tourCard.interface';
+import Button from '../../Button/Button';
+import StarQuality from '../../StarQuality/StarQuality';
 import './TourCard.scss';
 function TourCard(props: ITourCard) {
   const { time, name, price, quality, image } = props;

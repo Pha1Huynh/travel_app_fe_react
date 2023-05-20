@@ -1,7 +1,7 @@
-import Button from '../Button/Button';
-import StarQuality from '../StarQuality/StarQuality';
+import Button from '../../Button/Button';
+import StarQuality from '../../StarQuality/StarQuality';
 import './Package.scss';
-import PackageImg from '../../images/package/packageImg.webp';
+import PackageImg from '../../../images/package/packageImg.webp';
 function Package() {
   return (
     <>

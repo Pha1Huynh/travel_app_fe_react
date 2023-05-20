@@ -1,7 +1,7 @@
-import { IBanner } from '../../interfaces/components/banner.interface';
+import { IBanner } from '../../../interfaces/components/banner.interface';
 import './Banner.scss';
 
-import Button from '../Button/Button';
+import Button from '../../Button/Button';
 function Banner(props: IBanner) {
   const { image, firstText, secondText, isHaveButton } = props;
   return (
