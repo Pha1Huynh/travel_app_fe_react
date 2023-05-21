@@ -27,8 +27,11 @@ function LoginPage() {
             setIsButtonDisabled(false);
         }
 
-    }, [loginState.userNameOrEmailAddress, loginState.password]);
+    }, [loginState]);
 
+    const handleLogin = () => {
+        console.log('...Login')
+    }
     return (<>
         {isLogin === true ? <div className="login-warpper">
             <div className="login-container">
@@ -55,8 +58,11 @@ function LoginPage() {
                             {loginState.password.length <= 3 && <small className='text-input-error'>Mật khẩu không đúng định dạng</small>}
 
                         </div>
+                        {isButtonDisabled === true
+                            ? <Button text="Đăng nhập" type="primary" size="l" isDisabled={true} />
+                            : <Button text="Đăng nhập" type="primary" size="l" eventOnClick={handleLogin} />}
 
-                        <Button text="Đăng nhập" type="primary" size="l" />
+
 
                         <div className="login-note-dontacc">
                             <p>Bạn chưa có tài khoản ? <p onClick={() => { setIsLogin(false) }} className='text-link text-color'>Đăng ký</p></p>
