@@ -1,10 +1,10 @@
 .login-warpper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+    height          : 100vh;
     background-image: url('../../../images/banner/home.webp');
-    overflow: hidden;
+    overflow        : hidden;
 
     .login-container {
         margin: 1rem;
@@ -13,115 +13,118 @@
     .login-title {
         padding: 3rem 0 2rem 0;
 
-        h1{
-            color: #292929;
-            font-size: 2.8rem;
+        h1 {
+            color      : #292929;
+            font-size  : 2.8rem;
             font-weight: 700;
             line-height: 1.4;
         }
 
         .login-logo {
             text-align: center;
-            font-size: 4rem;
-            color: #350a4e;
+            font-size : 4rem;
+            color     : #350a4e;
         }
     }
 
     .login-content {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
+        display         : flex;
+        align-items     : center;
+        justify-content : center;
+        flex-direction  : column;
         background-color: #fff;
-        width: 55rem;
-        min-height: 500px;
-        border-radius: 5px;
+        width           : 55rem;
+        min-height      : 500px;
+        border-radius   : 5px;
+
         .login-group-input {
-            display: flex;
-            align-items: center;
+            display        : flex;
+            align-items    : center;
             justify-content: center;
-            flex-direction: column;
-            width: 380px;
-    
+            flex-direction : column;
+            width          : 380px;
+
             .login-wp-text {
                 padding-left: 2rem;
-                width: 100%;
+                width       : 100%;
             }
-    
+
             .login-form-input-warper {
-                width: 100%;      
-            }
-            
-            .login-form-input {
-                background: rgba(22,24,35,.06);
-                overflow: hidden;
-                border: 1px solid rgba(22,24,35,.09);
-                color: #464646;
-                border-radius: 4.4rem;
-                display: flex;
-                height: 4.5rem;
                 width: 100%;
-                margin: 4px;
-                outline: none;
-                padding: 12px 20px;
             }
-    
-            .login-form-input:last-child{
+
+            .login-form-input {
+                background   : rgba(22, 24, 35, .06);
+                overflow     : hidden;
+                border       : 1px solid rgba(22, 24, 35, .09);
+                color        : #464646;
+                border-radius: 4.4rem;
+                display      : flex;
+                height       : 4.5rem;
+                width        : 100%;
+                margin       : 4px;
+                outline      : none;
+                padding      : 12px 20px;
+            }
+
+            .login-form-input:last-child {
                 margin-bottom: 1rem;
             }
         }
-    
+
         .login-label-email {
             display: block;
         }
-    
+
         .login-note-dontacc {
-            font-size: 1.4rem;
+            font-size : 1.4rem;
             margin-top: 2rem;
-            text-align: center;          
+            text-align: center;
         }
-    
+
         .login-accep {
             text-align: center;
-            font-size: 1.2rem;
+            font-size : 1.2rem;
             margin-top: 3rem;
         }
 
         .text-color {
-            color: #fa9e1b;;
+            color: #fa9e1b;
+            ;
         }
     }
-    
-    .login-about {
-        text-align: center;
-        font-size: 1.4rem;
-        letter-spacing: 0.1rem;
-        padding: 2rem;
-        font-weight: 400;
 
-        .about{
+    .login-about {
+        text-align    : center;
+        font-size     : 1.4rem;
+        letter-spacing: 0.1rem;
+        padding       : 2rem;
+        font-weight   : 400;
+
+        .about {
             text-decoration: none;
-            color: #fff;
+            color          : #fff;
         }
+
         .space {
-            color: #fff;
-            display: inline;
-            padding-left: 0.1rem;
+            color        : #fff;
+            display      : inline;
+            padding-left : 0.1rem;
             padding-right: 0.1rem;
-            margin-top: -0.2rem;
+            margin-top   : -0.2rem;
         }
     }
-    
+
 }
 
 .register-warpper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    padding-top: 2rem;
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+    height          : 100vh;
+    padding-top     : 2rem;
     background-image: url('../../../images/banner/home.webp');
-    overflow: hidden;
+    overflow        : hidden;
 
     .register-container {
         margin: 1rem;
@@ -130,135 +133,138 @@
     .register-title {
         padding: 3rem 0 2rem 0;
 
-        h1{
-            color: #292929;
-            font-size: 2.8rem;
+        h1 {
+            color      : #292929;
+            font-size  : 2.8rem;
             font-weight: 700;
             line-height: 1.4;
         }
 
         .register-logo {
             text-align: center;
-            font-size: 4rem;
-            color: #350a4e;
+            font-size : 4rem;
+            color     : #350a4e;
         }
     }
 
     .register-content {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
+        display         : flex;
+        align-items     : center;
+        justify-content : center;
+        flex-direction  : column;
         background-color: #fff;
-        width: 55rem;
-        min-height: 500px;
-        border-radius: 5px;
+        width           : 55rem;
+        min-height      : 500px;
+        border-radius   : 5px;
 
         .register-group-input {
-            display: flex;
-            align-items: center;
+            display        : flex;
+            align-items    : center;
             justify-content: center;
-            flex-direction: column;
-            width: 380px;
-    
+            flex-direction : column;
+            width          : 380px;
+
             .register-wp-text {
                 padding-left: 2rem;
-                width: 100%;
+                width       : 100%;
             }
-    
+
             .register-form-input-warper {
-                width: 100%;      
-            }
-            
-            .register-form-input {
-                background: rgba(22,24,35,.06);
-                overflow: hidden;
-                border: 1px solid rgba(22,24,35,.09);
-                color: #464646;
-                border-radius: 4.4rem;
-                display: flex;
-                height: 4.5rem;
                 width: 100%;
-                margin: 4px;
-                outline: none;
-                padding: 12px 20px;
             }
-    
-            .register-form-input:last-child{
+
+            .register-form-input {
+                background   : rgba(22, 24, 35, .06);
+                overflow     : hidden;
+                border       : 1px solid rgba(22, 24, 35, .09);
+                color        : #464646;
+                border-radius: 4.4rem;
+                display      : flex;
+                height       : 4.5rem;
+                width        : 100%;
+                margin       : 4px;
+                outline      : none;
+                padding      : 12px 20px;
+            }
+
+            .register-form-input:last-child {
                 margin-bottom: 1rem;
             }
 
             .register-authen-code-email {
-                margin-top: 2rem;
+                margin-top   : 2rem;
                 margin-bottom: 2rem;
-                position: relative;
+                position     : relative;
             }
 
             .btn-send-code {
-                position: absolute;
-                top: 0;
-                right: -3px;
-                margin-top: 4px;
-                padding: 0 4rem 0 4rem;
+                position        : absolute;
+                top             : 0;
+                right           : -3px;
+                margin-top      : 4px;
+                padding         : 0 4rem 0 4rem;
                 background-color: #c9c9c9;
-                border-radius: 33px;
-                line-height: 4.5rem;
-                cursor: pointer;
+                border-radius   : 33px;
+                line-height     : 4.5rem;
+                cursor          : pointer;
             }
 
             .text-note {
-                color: #afafaf;
+                color    : #afafaf;
                 font-size: 1.2rem;
             }
         }
-    
+
         .register-label-email {
             display: block;
         }
-    
+
         .register-note-dontacc {
-            font-size: 1.4rem;
+            font-size : 1.4rem;
             margin-top: 2rem;
-            text-align: center;          
+            text-align: center;
         }
-    
+
         .register-accep {
             text-align: center;
-            font-size: 1.2rem;
+            font-size : 1.2rem;
             margin-top: 3rem;
         }
 
         .text-color {
-            color: #fa9e1b;;
+            color: #fa9e1b;
+            ;
         }
     }
-    
-    .register-about {
-        text-align: center;
-        font-size: 1.4rem;
-        letter-spacing: 0.1rem;
-        padding: 2rem;
-        font-weight: 400;
 
-        .about{
+    .register-about {
+        text-align    : center;
+        font-size     : 1.4rem;
+        letter-spacing: 0.1rem;
+        padding       : 2rem;
+        font-weight   : 400;
+
+        .about {
             text-decoration: none;
-            color: #fff;
+            color          : #fff;
         }
+
         .space {
-            color: #fff;
-            display: inline;
-            padding-left: 0.1rem;
+            color        : #fff;
+            display      : inline;
+            padding-left : 0.1rem;
             padding-right: 0.1rem;
-            margin-top: -0.2rem;
+            margin-top   : -0.2rem;
         }
     }
-    
+
 }
+
 .text-link {
     cursor: pointer;
 }
 
 .text-input-error {
     padding-left: 2rem;
-    color: #f33a58;
+    color       : #f33a58;
 }

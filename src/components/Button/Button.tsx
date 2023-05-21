@@ -6,7 +6,7 @@ function Button(props: IButton) {
   let sizeCss = `button-size-${size}`;
   let typecss = `button-${type}`;
   let disabledCss = isDisabled === true && `button-disabled `
-  console.log('check props button', props)
+
   return (
     <>
       <button className={`${typecss} ${sizeCss} ${disabledCss}`} onClick={() => { eventOnClick() }}>

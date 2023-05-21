@@ -5,15 +5,17 @@ import { faMapLocationDot } from '@fortawesome/free-solid-svg-icons';
 import Button from "../../../components/Button/Button";
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-
+import { useAppDispatch } from '../../../redux/config/hooks';
+import { loginAction } from '../../../redux/actions/authAction';
 function LoginPage() {
+    const dispatch = useAppDispatch();
     const [isButtonDisabled, setIsButtonDisabled] = useState(true);
 
     const [isLogin, setIsLogin] = useState(true);
 
     const [loginState, setLoginState] = useState<any>({
-        'email': '',
-        'password': ''
+        email: '',
+        password: ''
     });
 
     const handChangeInput = (type: string, data: any) => {
@@ -29,8 +31,11 @@ function LoginPage() {
 
     }, [loginState]);
 
-    const handleLogin = () => {
-        console.log('...Login')
+    const handleLogin = async () => {
+
+
+        await dispatch(loginAction({ userNameOrEmailAddress: loginState.email, password: loginState.password }))
+
     }
     return (<>
         {isLogin === true ? <div className="login-warpper">
