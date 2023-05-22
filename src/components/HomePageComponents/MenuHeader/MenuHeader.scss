@@ -61,7 +61,7 @@
                     background: linear-gradient(to right, #fa9e1b, #8d4fff);
                     margin-top: .6rem;
                     opacity   : 0;
-                    transition: .3s;
+                    transition: var(--transition-primary);
                 }
 
                 &.active::after {
@@ -85,7 +85,7 @@
                 font-size  : 1.8rem;
                 color      : #fff;
                 font-weight: 800;
-                transition : .3s;
+                transition : var(--transition-primary);
             }
 
             .search-form {
