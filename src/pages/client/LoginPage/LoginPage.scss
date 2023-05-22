@@ -36,6 +36,7 @@
         width           : 55rem;
         min-height      : 500px;
         border-radius   : 5px;
+        padding-bottom  : 1.6rem;
 
         .login-group-input {
             display        : flex;
@@ -89,8 +90,8 @@
         }
 
         .text-color {
-            color: #fa9e1b;
-            ;
+            color          : #fa9e1b;
+            text-decoration: none;
         }
     }
 
@@ -156,6 +157,7 @@
         width           : 55rem;
         min-height      : 500px;
         border-radius   : 5px;
+        padding-bottom  : 1.6rem;
 
         .register-group-input {
             display        : flex;
@@ -265,6 +267,12 @@
 }
 
 .text-input-error {
-    padding-left: 2rem;
-    color       : #f33a58;
+    padding-left : 2rem;
+    color        : #f33a58;
+    margin-bottom: 0.4rem;
+    display      : block;
+
+    &:nth-child(2) {
+        margin-bottom: 0.8rem;
+    }
 }

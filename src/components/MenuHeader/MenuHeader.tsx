@@ -1,6 +1,6 @@
 import './MenuHeader.scss';
 import { Link } from 'react-router-dom';
-import logo from '../../../images/logo.webp';
+import logo from '../../images/logo.webp';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { useState, useEffect } from 'react';
