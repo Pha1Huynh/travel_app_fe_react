@@ -1,6 +1,6 @@
 import './HomePage.scss';
 
-import AppHeader from '../../../components/HomePageComponents/AppHeader/AppHeader';
+import AppHeader from '../../../components/AppHeader/AppHeader';
 import HomeBanner from '../../../images/banner/home.webp';
 import SearchTour from '../../../components/HomePageComponents/SearchTour/SearchTour';
 import BestTour from '../../../components/HomePageComponents/BestTour/BestTour';

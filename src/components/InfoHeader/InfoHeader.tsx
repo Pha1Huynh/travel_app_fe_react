@@ -41,9 +41,9 @@ function InfoHeader() {
           </div>
           <div className="right">
             <div className="login-and-register">
-              <Link to="">Login</Link>
+              <Link to="/login">Login</Link>
               <div className="stick"></div>
-              <Link to="">Register</Link>
+              <Link to="/login">Register</Link>
             </div>
           </div>
         </div>

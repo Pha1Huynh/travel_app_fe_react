@@ -1,0 +1,23 @@
+.testimonials-container {
+    padding: 9rem 0;
+
+    .max-wide-1200 {
+        .testimonials-list {
+            display              : grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap           : 2.4rem;
+
+
+
+        }
+
+        .title {
+            color        : var(--title-color);
+            font-size    : 3rem;
+            font-weight  : 650;
+            text-align   : center;
+            margin-bottom: 9rem;
+        }
+
+    }
+}

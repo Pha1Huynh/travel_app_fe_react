@@ -27,7 +27,7 @@
 
             &:hover {
                 opacity   : .8;
-                transition: .6s;
+                transition: var(--transition-primary);
             }
         }
     }
@@ -84,7 +84,7 @@
 
             &:hover {
                 color     : var(--yellow-color);
-                transition: .4s ease;
+                transition: var(--transition-primary);
             }
 
         }
