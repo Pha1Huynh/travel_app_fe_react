@@ -1,4 +1,4 @@
-import TestimonialItem from '../../TestimonialItem/TestimonialItem';
+import TestimonialItem from '../TestimonialItem/TestimonialItem';
 import tripImg from '../../../images/icons/trip.webp'
 import customerImg from '../../../images/testimonials/testimonial1.webp'
 import './Testimonials.scss'

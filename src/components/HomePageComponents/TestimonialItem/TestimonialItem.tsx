@@ -1,4 +1,4 @@
-import { ITestimonialItem } from '../../interfaces/components/testimonials.interface';
+import { ITestimonialItem } from '../../../interfaces/components/testimonials.interface';
 import './TestimonialItem.scss';
 function TestimonialItem(props: ITestimonialItem) {
   const { image, icon, customerName, dateTime, title, description } = props
