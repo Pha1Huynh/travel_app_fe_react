@@ -7,6 +7,7 @@ import BestTour from '../../../components/HomePageComponents/BestTour/BestTour';
 import Package from '../../../components/HomePageComponents/Package/Package';
 import BestOffer from '../../../components/HomePageComponents/BestOffer/BestOffer';
 import Testimonials from '../../../components/HomePageComponents/Testimonials/Testimonials';
+import Footer from '../../../components/Footer/Footer';
 const HomePage = () => {
   return (
     <>
@@ -17,6 +18,7 @@ const HomePage = () => {
         <Package />
         <BestOffer />
         <Testimonials />
+        <Footer />
         <div className="main-content"></div>
       </div>
     </>
