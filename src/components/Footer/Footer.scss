@@ -1,0 +1,170 @@
+
+#footer {
+    background: #350a4e;
+    .footer-container-wapper {
+        padding: 6rem 0 0 0;
+        display: flex;
+        justify-content: center;
+    .footer-container-group {
+        width: 25%;
+        color:  #fff;
+        padding: 0.5rem;
+
+        .footer-title-logo {
+            font-size: 3rem;
+            text-decoration: none;
+            font-weight: 800;
+            text-transform: uppercase;
+            color:  #fff;
+            .footer-title-img{
+                transform: translateY(-1.6rem);
+                margin-right: 0.4rem;
+            }
+        }
+        
+        .footer-container-text {
+            padding-top: 2rem;
+            color:#ffffff;
+            font-family: Open Sans;
+            font-size:14px;
+            font-weight: 600;
+            line-height: 28px;
+        }
+
+        .footer-container-logo {
+            padding-top: 2rem;         
+        }
+        .footer-container-logo ul {
+            list-style: none;
+            padding: 0;
+            
+            li {
+                display: inline-block;
+                width: 31px;
+                height: 31px;
+                border: solid 1px #fa9e1b;
+                border-radius: 50%;
+                text-align: center;
+                transition: all 200ms ease;
+                margin-right: 1rem;
+                &:hover {
+                    background-color: #fa9e1b;
+                }
+            }
+
+            a {
+                display: block;
+                position: relative;
+                color: #fff;
+                top: 50%;
+                transform: translateY(-50%);
+                font-size: 12px;
+                transition: all 200ms ease;
+            } 
+        }
+        .footer-container-blog-text {
+           
+            a {
+                color: #ffffff;
+                font-size: 1.4rem;
+                &:hover {
+                    color: #fa9e1b;
+                }
+            }
+            span {
+                font-size: 1.2rem;
+                color: #fa9e1b;
+            }
+        }
+
+        .footer-container-tags-content {
+            ul {
+                padding: 0;
+            }
+            li {
+                display: inline-block;
+                margin: 0 1.2rem 1.2rem 0;
+                a {
+                    font-size: 1.2rem;
+                    display: block;
+                    text-align: center;
+                    text-decoration: none;
+                    padding: 0.8rem 3rem;
+                    border: 1px solid #fa9e1b;
+                    color: #ffffff;
+                    font-weight: 600;
+                    
+                    &:hover {
+                        background: #fa9e1b;
+                    }
+                }
+            }
+        }
+
+        .footer-container-contact-content {
+         
+            .footer-contact-info {
+                display: flex;
+                align-items: center;
+                margin-bottom: 3rem;
+                img {
+                    width: 2rem;
+                    height: 2rem;
+                    margin-right: 1rem;
+                }
+
+                span {
+                    font-size: 1.4rem;
+                    cursor: pointer;
+                    &:hover {
+                        color: #fa9e1b;
+                    }
+                }
+            }
+        }
+    }
+        
+    }
+
+    .footer-container-blog-content--item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 2rem;
+
+        span {
+            display: block;
+        }
+
+        .footer-container-blog-text {
+            padding-left: 1rem;
+
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+
+    .text-by-craete {
+        text-align: center;
+        display: block;
+        margin-top: 3.5rem;
+        color: #ffffff;
+        font-weight: 700;
+        font-size: 1.4rem;
+        padding-bottom: 1rem;
+        a {
+            text-decoration: none;
+            color: #fa9e1b;
+        }
+    }
+
+    .footer-title-heading {
+        font-size: 1.8rem;
+        font-weight: 800;
+        margin-top: 1.8rem;
+    }
+
+    .footer-container-blog-content, .footer-container-tags-content, .footer-container-contact-content {
+        padding-top: 3rem;
+    } 
+}
